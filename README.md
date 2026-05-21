@@ -1,3 +1,5 @@
+<img width="1295" height="651" alt="Screenshot 2026-05-21 192940" src="https://github.com/user-attachments/assets/23157be4-61da-4908-8551-fde82ab63c9c" />
+<img width="1295" height="651" alt="Screenshot 2026-05-21 192940" src="https://github.com/user-attachments/assets/e1302710-6b08-4a0a-ac7d-a90f05d73dee" />
 # D-FLIPDLOP-NEGEDGE
 
 **AIM:**
@@ -28,17 +30,42 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 **Procedure**
 
-/* write all the steps invloved */
+1.Type the program in Quartus software.
+
+2.Compile and run the program.
+
+3.Generate the RTL schematic and save the logic diagram.
+
+4.Create nodes for inputs and outputs to generate the timing diagram.
+
+5.For different input combinations generate the timing diagram.
+
 
 **PROGRAM**
+Program for flipflops and verify its truth table in quartus using Verilog programming.
+## Developed by: Shreenidhi S
+## RegisterNumber:212225040410
+verilog
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+module D_FF(D,Clock,reset,Q);
+input D,Clock,reset;
+output reg Q;
+always@(negedge Clock)//use negative edge clock for triggering condition
+if(!reset)
+Q<=0;
+else
+Q<=D;
+endmodule
 
 **RTL LOGIC FOR FLIPFLOPS**
+<img width="1295" height="651" alt="Screenshot 2026-05-21 192940" src="https://github.com/user-attachments/assets/a6da71d4-2840-4b75-a614-7c39434947ce" />
+
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+<img width="1285" height="664" alt="Screenshot 2026-05-21 192954" src="https://github.com/user-attachments/assets/c00afff1-951f-4aa0-aeca-2af3fc16275d" />
+
 
 
 **RESULTS**
+Thus the program to implement a D flipflop using verilog and validating their functionality using their functional tables.
